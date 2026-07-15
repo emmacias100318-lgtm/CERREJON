@@ -1,28 +1,12 @@
-/*=========================================
-CERREJÓN
-script.js
-=========================================*/
-
-// ==============================
-// ELEMENTOS
-// ==============================
-
 const header = document.getElementById("header");
 const menu = document.querySelector(".menu");
 const menuBtn = document.querySelector(".menu-btn");
 const topBtn = document.getElementById("topBtn");
 
-// ==============================
-// MENÚ HAMBURGUESA
-// ==============================
 
 menuBtn.addEventListener("click", () => {
     menu.classList.toggle("active");
 });
-
-// ==============================
-// CERRAR MENÚ AL SELECCIONAR
-// ==============================
 
 document.querySelectorAll(".menu a").forEach(link => {
 
@@ -33,10 +17,6 @@ document.querySelectorAll(".menu a").forEach(link => {
     });
 
 });
-
-// ==============================
-// HEADER AL HACER SCROLL
-// ==============================
 
 window.addEventListener("scroll", () => {
 
@@ -52,9 +32,7 @@ window.addEventListener("scroll", () => {
 
 });
 
-// ==============================
-// BOTÓN SUBIR
-// ==============================
+
 
 window.addEventListener("scroll", () => {
 
@@ -82,9 +60,6 @@ topBtn.addEventListener("click", () => {
 
 });
 
-// ==============================
-// ANIMACIONES
-// ==============================
 
 const observer = new IntersectionObserver((entries)=>{
 
@@ -110,9 +85,7 @@ document.querySelectorAll(".section").forEach(section=>{
 
 });
 
-// ==============================
-// EFECTO HOVER EN GALERÍA
-// ==============================
+
 
 const images = document.querySelectorAll(".gallery-grid img");
 
@@ -132,9 +105,6 @@ images.forEach(img=>{
 
 });
 
-// ==============================
-// EFECTO PARALLAX HERO
-// ==============================
 
 window.addEventListener("scroll",()=>{
 
@@ -144,9 +114,7 @@ window.addEventListener("scroll",()=>{
 
 });
 
-// ==============================
-// EFECTO EN BOTONES
-// ==============================
+
 
 const buttons=document.querySelectorAll(".btn");
 
@@ -166,9 +134,6 @@ buttons.forEach(btn=>{
 
 });
 
-// ==============================
-// AÑO AUTOMÁTICO EN FOOTER
-// ==============================
 
 const footer = document.querySelector("footer");
 
@@ -177,9 +142,7 @@ const year = new Date().getFullYear();
 footer.querySelectorAll("p")[1].innerHTML =
 `© ${year} Cerrejón - Página desarrollada con HTML5, CSS3 y JavaScript.`;
 
-// ==============================
-// MENSAJE EN CONSOLA
-// ==============================
+
 
 console.log("%cCERREJÓN","font-size:30px;color:#0B5E3B;font-weight:bold;");
 
